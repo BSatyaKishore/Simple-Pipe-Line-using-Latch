@@ -9,11 +9,11 @@ end entity Main;
 architecture main of Main is
 	--! Instruciton Fetch Unit
 	component myand is
-		port (a,b,c: in bit; d,e: out bit);
+		port (a,b,c,clk: in bit; d,e: out bit);
 	end component myand;
 	
 	component SAnd is
-		port (d,e: in bit; f: out bit);
+		port (d,e, clk: in bit; f: out bit);
 	end component SAnd;
 
 	signal a: bit:='0';
@@ -22,10 +22,12 @@ architecture main of Main is
 	signal d: bit:='0';
 	signal e: bit:='0';
 	signal f: bit:='0';
+	signal clk: bit:='0';
 
 begin
-	First: myand port map(a,b,c,d,e);
-	Second: SAnd port map(d,e,f);
+	clk<= not clk after 2 ns;
+	First: myand port map(a,b,c,clk,d,e);
+	Second: SAnd port map(d,e,clk,f);
 	a<= not a after 6 ns;
   	b<= not b after 10 ns;
 	c<= not c after 8 ns;
