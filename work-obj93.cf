@@ -1,10 +1,10 @@
 v 3
-file . "myand.vhdl" "20160902032838.000" "20160902090010.760":
-  entity myand at 1( 0) + 0 on 37;
-  architecture andarc of myand at 8( 113) + 0 on 38;
-file . "Main.vhdl" "20160902032648.000" "20160902090022.460":
-  entity main at 1( 0) + 0 on 41;
-  architecture main of main at 9( 197) + 0 on 42;
-file . "SAnd.vhdl" "20160902032937.000" "20160902090017.135":
-  entity sand at 1( 0) + 0 on 39;
-  architecture andarc of sand at 8( 106) + 0 on 40;
+file . "myand.vhdl" "20160902044532.000" "20160902101746.366":
+  entity myand at 1( 0) + 0 on 49;
+  architecture andarc of myand at 8( 113) + 0 on 50;
+file . "Main.vhdl" "20160902044742.000" "20160902101746.412":
+  entity main at 1( 0) + 0 on 53;
+  architecture main of main at 9( 197) + 0 on 54;
+file . "SAnd.vhdl" "20160902044551.000" "20160902101746.389":
+  entity sand at 1( 0) + 0 on 51;
+  architecture andarc of sand at 8( 106) + 0 on 52;

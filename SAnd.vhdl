@@ -9,7 +9,7 @@ architecture andArc of SAnd is
 begin
 	process (clk)
 	begin
-		if (clk'event and clk='1') then
+		if (clk='1') then
 			f<= (d and e);
 		end if;
 	end process;

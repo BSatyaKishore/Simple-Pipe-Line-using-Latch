@@ -25,7 +25,7 @@ architecture main of Main is
 	signal clk: bit:='0';
 
 begin
-	clk<= not clk after 2 ns;
+	clk<= not clk after 3 ns;
 	First: myand port map(a,b,c,clk,d,e);
 	Second: SAnd port map(d,e,clk,f);
 	a<= not a after 6 ns;

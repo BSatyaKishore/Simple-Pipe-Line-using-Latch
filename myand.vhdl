@@ -7,9 +7,9 @@ end myand;
 
 architecture andArc of myand is
 begin
-	process
+	process (clk)
 	begin
-		if (clk'event and clk='1') then
+		if (clk='1') then
 			d<= (a and b);
 			e <= c;
 		end if;
